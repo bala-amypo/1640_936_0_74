@@ -5,4 +5,5 @@ import com.example.demo.entity.studententity;
 public interface studentservice{
 
     studententity postData(studententity stu);
+    
 }

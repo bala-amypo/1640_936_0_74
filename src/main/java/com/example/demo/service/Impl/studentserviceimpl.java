@@ -13,6 +13,6 @@ public class studentserviceImpl implements studentservice {
    //deleBy();
    //existsById()
     public studententity postdata(studententity stu){
-     return sstudent.
+     return student.save(stu);
     }
 }

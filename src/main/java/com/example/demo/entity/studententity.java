@@ -9,7 +9,7 @@ public class studententity{
     private String email;
     private String password;
     private Date date;
-}
+
 public Integer getId() {return id;}
 public void setId(Integer id) {this.id=id;}
 
@@ -25,10 +25,13 @@ public void setPassword(String password) {this.password=password}
 public Date getUser() {return date;}
 public void setUser(Date date) {this.date=date}
 
-public void main(Integer id, String user,String email,String password,Date date){
+public studententitty(Integer id, String user,String email,String password,Date date){
     this.id=id;
     this.user=user;
     this.email.email;
     this.password=password;
     this.date=date;
+}
+public studententity(){
+
 }

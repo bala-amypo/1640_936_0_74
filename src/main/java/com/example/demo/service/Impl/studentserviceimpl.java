@@ -5,6 +5,7 @@ import com.example.demo.entity.studententity;
 import com.example.demo.service.studentservice;
 
 @Service 
+
 public class studentserviceImpl implements studentservice {
    @Autowired studentrepo student; 
    //save()
@@ -12,6 +13,7 @@ public class studentserviceImpl implements studentservice {
    //findById()
    //deleBy();
    //existsById()
+   @Override
     public studententity postdata(studententity stu){
      return student.save(stu);
     }

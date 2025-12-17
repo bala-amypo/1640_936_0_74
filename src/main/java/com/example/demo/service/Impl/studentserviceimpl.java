@@ -12,9 +12,9 @@ public class studentserviceImpl implements studentservice {
    //findAll()
    //findById()
    //deleBy();
-   //existsById()
+   //existsById(),
    @Override
-    public studententity postdata(studententity stu){
+    public studententity postData(studententity stu){
      return student.save(stu);
     }
 }

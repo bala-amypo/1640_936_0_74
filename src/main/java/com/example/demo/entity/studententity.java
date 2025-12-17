@@ -8,5 +8,9 @@ public class studententity{
     private string email;
     private string password;
     private Date date;
-    private Time time;
+}
+public string getuser{
+
+public static id(Itnteger ID){
+    
 }

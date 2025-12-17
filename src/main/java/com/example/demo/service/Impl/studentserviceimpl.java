@@ -6,8 +6,13 @@ import com.example.demo.service.studentservice;
 
 @Service 
 public class studentserviceImpl implements studentservice {
-   @Autowired studentrepo   
+   @Autowired studentrepo student; 
+   //save()
+   //findAll()
+   //findById()
+   //deleBy();
+   //existsById()
     public studententity postdata(studententity stu){
-
+     return sstudent.
     }
 }

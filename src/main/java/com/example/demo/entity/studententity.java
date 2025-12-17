@@ -1,5 +1,6 @@
 package.com.example.demo.entity;
-import jakarta.persistance.entity;
+import java.util.Date;
+import jakarta.persistance.Entity;
 import jakarta.persistance.Id;
 import jakarta.persistance.GeneartedValue;
 import jakarta.persistance.GenerationType;

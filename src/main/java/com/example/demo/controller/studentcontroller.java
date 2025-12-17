@@ -3,6 +3,8 @@ package com.example.demo.studentcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.webbind.annotation.PostMapping;
 import org.springframework.webbind.annotation.RestController;
+
+import com.example.demo.entity
 @RestController
 public class studentcontroller{
         @Autowired studentservice ser;

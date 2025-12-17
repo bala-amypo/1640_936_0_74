@@ -2,6 +2,7 @@ package com.example.demo.studentcontroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.studententity;
@@ -12,7 +13,7 @@ public class studentcontroller{
 
         @PostMapping("/post")
         public studententity sendData(@RequestBody studententity stu){
-            return ser.postdata(stu);
+            return ser.postData(stu);
         }
 
 }

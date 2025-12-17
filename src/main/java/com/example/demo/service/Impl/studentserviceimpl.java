@@ -1,5 +1,5 @@
 package com.example.demo.service.Impl;
-import org.springframework.stereotype.service;
+import org.springframework.sterotype.service;
 
 import com.example.demo.entity.studententity;
 import com.example.demo.service.studentservice;

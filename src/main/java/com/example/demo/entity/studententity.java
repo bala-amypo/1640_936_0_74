@@ -1,5 +1,5 @@
-package.com.example.demo.entity
-import jakarta.persistance.Entity;
+package.com.example.demo.entity;
+import jakarta.persistance.entity;
 import jakarta.persistance.Id;
 import jakarta.persistance.GeneartedValue;
 import jakarta.persistance.GenerationType;

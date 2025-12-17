@@ -4,4 +4,5 @@ import org.springframework.webbind.annotation.RestController;
 @RestController
 public class studentcontroller{
         @Autowired studentservice 
+        
 }

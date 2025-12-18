@@ -20,12 +20,10 @@ public class validationentity{
     @email(message="Email is not valid")
     private String email;
     @Size(min=2,max=10)
-    @NotNull(message="Password is 
-
-
+    @NotNull(message="Password is mandatory")
     private String password;
-    @Max
-    @Positive
+    @Max(30)
+    @Positive(message="Age must be a positive number")
     private int age;
 
 

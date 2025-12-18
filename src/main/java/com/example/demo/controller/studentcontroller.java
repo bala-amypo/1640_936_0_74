@@ -30,4 +30,5 @@ public class studentcontroller{
      public studententity getDataId(@PathVariable int id){
         return ser.getData(id);
      }
+     @PutMapping("/putid/{}")
 }

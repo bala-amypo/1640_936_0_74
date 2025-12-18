@@ -19,7 +19,8 @@ public class validationentity{
     private String username;
     @email(message="Email is not valid")
     private String email;
-    @Size(min=2,max
+    @Size(min=2,max=10)
+    @NotNull(message="Password is 
 
 
     private String password;

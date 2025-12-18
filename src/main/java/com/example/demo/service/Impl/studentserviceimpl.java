@@ -19,4 +19,5 @@ public class studentserviceimpl implements studentservice {
     public studententity postData(studententity stu){
      return student.save(stu);
     }
+    
 }

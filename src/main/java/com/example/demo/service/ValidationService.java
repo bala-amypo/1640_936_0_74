@@ -1,9 +1,14 @@
 package com.example.demo.service;
+import java.util.List;
+import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.ValidationEntity;
 
-import com.example.demo.entity.validationentity;
-import com.example.demo.service.validationservice;
+public interface ValidationService{
+    ValidationEntity vpostData(ValidationEntity stu);
+        //StudentEntity getData(); 
+    // List<StudentEntity>getAllData();
+    // String DeleteData(int id);
+    // StudentEntity getData(int id);
+    // StudentEntity updateData(int id,StudentEntity entity);
 
-public interface validationservice{
-    // postdata
-    validationentity postData(validationentity vau);
 }

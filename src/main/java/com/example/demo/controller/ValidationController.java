@@ -1,17 +1,20 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import com.example.demo.service.validationservice;
-import com.example.demo.entity.validationentity;
-import com.example.demo.controller.validationcontroller;
-
+import org.springframework.web.bind.annotation.RestController;
+import com.example.demo.entity.ValidationEntity;
+import com.example.demo.service.ValidationService;
+import jakarta.validation.Valid;
 @RestController
-public class validationcontroller{
-    @Autowired validationservice ser;
-    @PostMapping("/userdatas")
-    public validationentity sendDatas(@Valid @RequestBody validationentity vau){
-        return ser.postValue(vau);
+public class ValidationController{
+    @Autowired ValidationService ser;
+    @PostMapping("/vpost")
+    
+    public ValidationEntity vsendData(@Valid @RequestBody ValidationEntity entity){
+        return ser.vpostData(entity);
     }
 }

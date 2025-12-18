@@ -26,7 +26,7 @@ public class studentcontroller{
      public String DeleteForm(@PathVariable int id){
         return ser.DeleteData(id);
      }
-     @GetMapping("/getid/{id}") 
+     @GetMapping("/getid/{id}") id
      public studententity getDataId(@PathVariable int id){
         return ser.getData(id);
      }

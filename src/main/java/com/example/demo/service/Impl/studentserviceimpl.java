@@ -29,8 +29,13 @@ public class studentserviceimpl implements studentservice {
         return "Deleted Successfully";
     }
     @Override
-public studententity getData(int id){
+    public studententity getData(int id){
     return student.findById(id).orElse(null);
-}
-
+    }
+     @Override
+     public studententity updateData(int id,studententity entity){
+        if(student.existsById(id)){
+            
+        }
+     }
 }

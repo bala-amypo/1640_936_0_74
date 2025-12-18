@@ -1,4 +1,4 @@
-package com.exaple.demo.service;
+package com.example.demo.service;
 
 import com.example.demo.entity.validationentity;
 import com.example.demo.service.validationservice;

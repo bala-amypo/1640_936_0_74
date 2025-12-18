@@ -9,9 +9,9 @@ import com.example.demo.controller.validationcontroller;
 
 @RestController
 public class validationcontroller{
-    @Autowired validationservice sere;
+    @Autowired validationservice ser;
     @PostMapping("/userdatas")
     public validationentity sendDatas(@Valid @RequestBody validationentity vau){
-        return sere.postValue(vau);
+        return ser.postValue(vau);
     }
 }

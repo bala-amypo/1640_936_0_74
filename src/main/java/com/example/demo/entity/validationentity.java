@@ -67,7 +67,9 @@ public class validationentity{
         this.email=email;
         this.age=age;
     }
-    )
+    public validationentity(){
+        
+    }
 
     
 }

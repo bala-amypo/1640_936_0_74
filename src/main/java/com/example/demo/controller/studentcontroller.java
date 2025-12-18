@@ -19,4 +19,8 @@ public class studentcontroller{
     public List<studententity>getData(){
         return ser.getAllData();
     }
+    @DeleteMapping("/Delete/{id}")
+     public String DeleteForm(@PathVariable int id){
+        return ser.D
+     }
 }

@@ -5,7 +5,7 @@ import com.example.demo.entity.studententity;
 import com.example.demo.service.studentservice;
 import java.util.List;
 import com.example.demo.repository.studentrepo;
-
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Service 
 
@@ -23,5 +23,9 @@ public class studentserviceimpl implements studentservice {
       @Override
     public List<studententity> getAllData(){
      return student.findAll();
+    }
+    public String DeleteData(@PathVariable int id){
+        student.deleteById();
+        return "Deleted Successfully";
     }
 }

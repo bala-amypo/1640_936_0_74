@@ -11,7 +11,7 @@ public class validationcontroller
 {
     @Autowired validationservice sere;
     @PostMapping("/userdatas")
-    public validationentity sendData(@Valid @RequestBody validationentity vau){
+    public validationentity sendDatas(@Valid @RequestBody validationentity vau){
         return sere.postValue(vau);
     }
 }

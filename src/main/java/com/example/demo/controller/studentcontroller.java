@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import com.example.demo.entity.studententity;
@@ -26,9 +27,12 @@ public class studentcontroller{
      public String DeleteForm(@PathVariable int id){
         return ser.DeleteData(id);
      }
-     @GetMapping("/getid/{id}") id
+     @GetMapping("/getid/{id}") 
      public studententity getDataId(@PathVariable int id){
         return ser.getData(id);
      }
-     @PutMapping("/putid/{}")
+     @PutMapping("/putid/{id}")
+     public studententity putVal(@PathVariable int id,@RequestBody studententity entity){
+     return ser.updateData(id,entity);
+     }
 }

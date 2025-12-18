@@ -1,5 +1,5 @@
 package com.example.demo.studentcontroller;
-
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,5 +15,8 @@ public class studentcontroller{
         public studententity sendData(@RequestBody studententity stu){
             return ser.postData(stu);
         }
-
+    @GetMapping("/get")
+    public List<studententity>getData(){
+        return ser.getAllData();
+    }
 }

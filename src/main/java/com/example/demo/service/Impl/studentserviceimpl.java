@@ -3,6 +3,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.studententity;
 import com.example.demo.service.studentservice;
+import java.util.List;
 import com.example.demo.repository.studentrepo;
 
 
@@ -19,5 +20,8 @@ public class studentserviceimpl implements studentservice {
     public studententity postData(studententity stu){
      return student.save(stu);
     }
-    
+      @Override
+    public List<studententity> getAllData(){
+     return student.findAll();
+    }
 }

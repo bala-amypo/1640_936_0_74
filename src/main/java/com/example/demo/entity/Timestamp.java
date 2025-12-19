@@ -25,16 +25,16 @@ public class Timestamp{
     private LocalDateTime updateAt;
 
 @PrePersist
-      LocalDateTime now=  LocalDateTime();
+      
 public void Oncreate(){
-    
+    LocalDateTime now=  LocalDateTime();
       this.createdAt=now;
       this.updatedAt=now;
 }
 @PreUpdate
-    LocalDateTime now= LocalDateTime().now();
-public void Afterupdate(){
     
+public void Afterupdate(){
+    LocalDateTime now= LocalDateTime().now();
     this.updatedAt=now;
 }
 }

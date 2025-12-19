@@ -27,14 +27,14 @@ public class Timestamp{
 @PrePersist
       
 public void Oncreate(){
-    LocalDateTime now=  LocalDateTime();
+    LocalDateTime now=  LocalDateTime.now();
       this.createdAt=now;
       this.updatedAt=now;
 }
 @PreUpdate
     
 public void Afterupdate(){
-    LocalDateTime now= LocalDateTime().now();
+    LocalDateTime now= LocalDateTime.now();
     this.updatedAt=now;
 }
 }

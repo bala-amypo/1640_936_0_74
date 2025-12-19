@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 import lombok.Data;
-import jakarta.persistence.PerPersist;
-import jakarta.persistence.PrUpdate;
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
@@ -25,14 +25,16 @@ public class Timestamp{
     private LocalDateTime updateAt;
 
 @PrePersist
+    
 public void Oncreate(){
-      LocalDateTime now=  LocalDateTime();
+    
       this.createdAt=now;
       this.updatedAt=now;
 }
 @PreUpdate
-public void Afterupdate(){
     LocalDateTime now= LocalDateTime().now();
+public void Afterupdate(){
+    
     this.updatedAt=now;
 }
 }

@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 import lombok.Data;
 import jakarta.persistence.PerPersist;
-import jakarta.persistence.Perpdate;
+import jakarta.persistence.PrUpdate;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;

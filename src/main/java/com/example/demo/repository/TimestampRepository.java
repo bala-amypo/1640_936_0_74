@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Timestamp;
 import com.example.demo.entity.ValidationEntity;
 @Repository
-public interface TimestampRepo extends JpaRepository<Timestamp,Long>{
+public interface TimestampRepository extends JpaRepository<Timestamp,Long>{
 
 }

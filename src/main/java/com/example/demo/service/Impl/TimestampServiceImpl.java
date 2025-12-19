@@ -5,11 +5,11 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.Timestamp;
 import com.example.demo.service.TimestampService;
 import java.util.List;
-import com.example.demo.repository.TimestampRepo;
+import com.example.demo.repository.TimestampRepository;
 @Service
 
 public class TimestampServiceImpl implements TimestampService{
-    @Autowired TimestampRepo student;
+    @Autowired TimestampRepository student;
     //save()
     //findAll()
     //findById()

@@ -35,6 +35,6 @@ public void Oncreate(){
     
 public void Afterupdate(){
     LocalDateTime now= LocalDateTime.now();
-    this.updatedAt=now;
+    this.updateAt=now;
 }
 }
